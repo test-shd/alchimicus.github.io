@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 8px 24px;
+   
+    border-radius: 10px;
+    &:active {
+        box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
+    }
+}
+@import '_vari.scss';
+@import '_header.scss';
+@import '_promo.scss';
+
+@import '_media.scss';

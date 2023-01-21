@@ -1,0 +1,60 @@
+.promo {
+    &__wrap {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(19, 47, 144, 0.35);
+        z-index: -1;
+    }
+    &__h {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+
+        color: #FFFFFF;
+        text-align: center;
+        max-width: 587px;
+        margin: 95px auto 0;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #FFFFFF;
+        max-width: 450px;
+        margin: 18px auto 0;
+    }
+    &__btn {
+        margin: 0 auto;
+        background: #fff;
+        color: #000;
+        display: block;
+        width: fit-content;
+        margin-top: 47px;
+        &:hover {
+            background: $main-color;
+            color: #fff;
+            transition: all .3s;
+        }
+    }
+}
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
