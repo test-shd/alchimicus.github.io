@@ -2,7 +2,7 @@
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     z-index: 2;
     top: 44px;
     right: 40px;
@@ -70,9 +70,7 @@
         width: 100%;
     }
 }
-header {
-    margin-top: 25px;
-}
+
 .header {
     &__wrapper {
         display: flex;

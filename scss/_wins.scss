@@ -1,0 +1,38 @@
+.wins {
+    padding-bottom: 200px;
+    &__wrapper {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(19, 47, 144, 0.6);
+    }
+    &__item {
+        width: 25%;
+        text-align: center;
+        padding: 28px;
+        position: relative;
+    }
+    &__icon {
+        margin-bottom: 15px;
+        width: 50px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $main-color;
+    }
+    &__line {
+        width: 2px;
+        height: 126px;
+        background: #A9A9A9;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
