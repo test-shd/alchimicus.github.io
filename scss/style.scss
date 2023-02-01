@@ -11,6 +11,7 @@ body {
     max-width: 1160px;
     margin: 0 auto;
 }
+@import '_vari.scss';
 .btn {
     font-weight: 400;
     font-size: 16px;
@@ -25,9 +26,16 @@ body {
         box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
     }
 }
-@import '_vari.scss';
+.title {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: $main-color;
+}
 @import '_header.scss';
 @import '_promo.scss';
 @import '_wins.scss';
+@import '_prod.scss';
 
 @import '_media.scss';
