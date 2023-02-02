@@ -10,6 +10,25 @@
             width: 1px;
         }
     }
+    .deli {
+        &__wrapper {
+            flex-direction: column;
+           
+        }
+        &__wrap {
+            margin-top: 70px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__img {
+            padding: 7px;
+            top: -16%;
+            img {
+                width: 40px;
+            }
+        }
+    }
 }
 @media screen and(max-width:768px) {
     .menu {
@@ -61,6 +80,9 @@
         top: 10px;
         right: 0;
     }
+    .title {
+        font-size: 24px;
+    }
     .promo {
         &__h {
             
@@ -108,6 +130,7 @@
         }
     }
     .prod {
+        padding: 60px 0;
         &__wrapper {
             flex-wrap: wrap;
             margin-top: 50px;
@@ -115,6 +138,52 @@
         &__item {
             width: 50%;
             height: 250px;
+        }
+        &__title {
+            padding: 20px 14px;
+        }
+        &__button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+    @keyframes prodbutton {
+        0% {
+            width: 0;
+            height: 0;
+        }
+        100% {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .company {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__wrap__img {
+            order: 1;
+            width: 100%;
+            height: 250px;
+        }
+        &__text {
+            order: 2;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .deli {
+        padding: 60px 0;
+        &__wrap {
+            justify-content: center;
+            margin-top: 40px;
+        }
+        &__item {
+            margin: 40px 0 0;
+        }
+        .title {
+            width: 100%;
         }
     }
    

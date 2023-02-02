@@ -1,0 +1,62 @@
+.deli {
+    background: url(../img/deli_bg.png) no-repeat bottom right;
+    background-size: contain;
+    background-color: #07254F;
+    padding: 100px 0;
+    .title {
+        color: #fff;
+        width: 30%;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    &__item {
+        border: 3px solid #fff;
+        width: 294px;
+       
+        margin: 0 50px 80px 0;
+        position: relative;
+        padding: 50px 30px 20px;
+        
+    }
+    &__img {
+        position: absolute;
+        top: -23%;
+        padding: 10px;
+        z-index: 10;
+        background: #07254F;
+        img {
+            width: 60px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+
+        color: #FFFFFF;
+        span {
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        a {
+            color: #fff;
+            
+        }
+    }
+}

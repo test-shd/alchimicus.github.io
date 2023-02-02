@@ -1,0 +1,63 @@
+.company {
+    padding: 60px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #677E89;
+        width: 45%;
+
+    }
+    &__wrap__img {
+        position: relative;
+        width: 50%;
+        height: 400px;
+        overflow: hidden;
+        filter: drop-shadow(30px 30px 40px rgba(19, 47, 144, 0.35));
+    }
+    &__img {
+        position: absolute;
+        border-radius: 10px;
+        width: 80%;
+        transition: all .5s;
+        
+        &:nth-child(3) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:nth-child(2) {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:nth-child(1) {
+            bottom: 0;
+            right: 0;
+           
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            z-index: 20;
+            top: 0;
+            left: 0;
+            
+            transform: translate(0%, 0%);
+            transition: all .5s;
+            width: 100%;
+            
+            bottom: auto;
+           
+        }
+    }
+}
