@@ -196,5 +196,29 @@
             margin-top: 20px;
         }
     }
-   
+    .footer {
+        &__text {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 12px;
+        } 
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__map {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+    @media screen and(max-width:424px) {
+        .footer {
+            &__contacts {
+                flex-direction: column;
+                &__item {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
 }

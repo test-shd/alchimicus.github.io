@@ -59,5 +59,11 @@
             bottom: auto;
            
         }
+        &:nth-child(1):hover {
+            bottom: 0;
+            right: 0;
+            left: auto;
+            top: auto;
+        }
     }
 }
