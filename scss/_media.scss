@@ -186,5 +186,15 @@
             width: 100%;
         }
     }
+    .clients {
+        .item {
+            width: 50px;
+            height: 100px;
+            margin: 0 10px;
+        }
+        .items__wrap {
+            margin-top: 20px;
+        }
+    }
    
 }
