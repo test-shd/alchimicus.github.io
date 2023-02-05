@@ -1,0 +1,92 @@
+.catalog {
+    padding-top: 20px;
+    .menu {
+        &__link {
+            color: $text-color;
+        }
+        &_active {
+            .menu__link {
+                color: #fff;
+            }
+        }
+    }
+    header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $text-color;
+        margin-bottom: 40px;
+    }
+    .header__btn {
+        background: $second-color;
+        &:hover {
+            background: #fff;
+            color: $second-color;
+            outline: 1px solid $second-color;
+        }
+    }
+    .hamburger {
+        border: 1px solid $text-color;
+        span {
+            background: $text-color;
+        }
+        &_active {
+            border: none;
+            span {
+                background: #fff;
+            }
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.05em;
+        color: $main-color;
+        
+        &_center {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    &__block {
+        padding: 60px 90px;
+        position: relative;
+        background: #F3F5F8;
+        border-radius: 10px;
+        min-height: 350px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &:hover {
+            box-shadow: 5px 10px 30px $text-color;
+        }
+    }
+    &__img {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    &__link {
+        font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.05em;
+color: $text-color;
+text-decoration: none;
+max-width: 220px;
+&:hover {
+    text-decoration: underline;
+    
+}
+&:active {
+    color: #f80404;
+}
+    }
+}

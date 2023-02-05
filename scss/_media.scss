@@ -29,6 +29,13 @@
             }
         }
     }
+    .catalog {
+       
+        &__wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 }
 @media screen and(max-width:768px) {
     .menu {
@@ -210,14 +217,41 @@
             width: 100%;
             margin-top: 30px;
         }
+        
     }
-    @media screen and(max-width:424px) {
-        .footer {
-            &__contacts {
-                flex-direction: column;
-                &__item {
-                    margin-top: 25px;
-                }
+    .catalog {
+        &__title_center {
+            font-size: 18px;
+            line-height: 20px;
+            margin: 40px 0;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__block {
+            padding: 40px 20px;
+        }
+        &__img {
+            opacity: .5;
+            width: 200px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__wrapper {
+            gap: 30px;
+        }
+    }
+    
+}
+@media screen and(max-width:424px) {
+    .footer {
+        &__contacts {
+            flex-direction: column;
+            &__item {
+                margin-top: 25px;
             }
         }
     }
