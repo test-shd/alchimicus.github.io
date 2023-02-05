@@ -27,7 +27,7 @@
                     <li class="menu__item"><a href="#prod" class="menu__link">Продукция</a></li>
                     <li class="menu__item"><a href="#cont" class="menu__link">Контакты</a></li>
                 </ul>
-                <a href="#" class="btn header__btn">Заказать звонок</a>
+                <a href="#" class="btn header__btn consult">Заказать звонок</a>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -271,5 +271,25 @@
             </ul>
         </div>
     </footer>
+      <!-- modal -->
+      <div class="overlay" ></div>
+      <div class="modal">
+          <div class="modal__close">&times;</div>
+          <p class="modal__title">Оставьте Ваши контакты, <br> и мы свяжемся с Вами в ближайшее время</p>
+          <form class="modal__form" action="#">
+              <input type="text" placeholder="Ваше имя" name="name" required>
+              <input type="number" placeholder="Ваш телефон" name="phone" required>
+              <textarea placeholder="Введите сообщение" name="textmessage"></textarea>
+              <button class="btn" type="submit">Отправить</button>
+              <span class="policy">
+                  <input type="checkbox" checked required>
+                  Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
+              </span>
+          </form>
+      </div>
+      <div class="thanks">
+          <div class="modal__close">&times;</div>
+          <p class="modal__title">Спасибо за заявку!</p>
+      </div>
 </body>
 </html>
