@@ -1,0 +1,129 @@
+.logo_loader {
+    position: fixed;
+    background: #0B2E5E;
+    height: 100%;
+    width: 100%;
+   top: 0;
+   
+    overflow: hidden;
+    z-index: 100;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.border {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 76px;
+    height: 76px;
+    overflow: hidden;
+    &::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #0B2E5E;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+        border-radius: 10px;
+		background-image: conic-gradient(transparent, rgb(255, 255, 255), transparent 55%);
+		animation: rotate 3s linear infinite;
+	}
+    &::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 3px;
+        top: 3px;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+		background: #0B2E5E;
+		border-radius: 5px;
+	}
+}
+.date {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+
+    color: #FFFFFF;
+}
+.numbers {
+    position: absolute;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+    /* or 100% */
+
+
+    color: #FFFFFF;
+    top: 3px;
+    right: 6px;
+}
+.region {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    width: 112px;
+    color: #FFFFFF;
+    position: absolute;
+    left: calc(50% - 19px);
+    top: 50%;
+    transform: translate(0%, -50%);
+    background: #0B2E5E;
+    &_rus {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.18em;
+        
+        color: #FFFFFF;
+        animation: scale 3s linear infinite;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

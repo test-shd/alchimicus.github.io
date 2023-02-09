@@ -142,20 +142,32 @@
     &__item {
         width: 260px;
         border: 1px solid #0B2E5E;
-        padding: 25px 42px;
+        padding: 25px;
         margin-bottom: 40px;
         &__btn {
             background: $second-color;
             color: #fff;
             cursor: pointer;
+            font-size: 14px;
             &:hover {
                 background: #fff;
                 color: $second-color;
                 outline: 1px solid $second-color;
-            }  
+            } 
+            &:nth-child(2) {
+                background: transparent;
+                color: #000;
+                text-decoration: underline;
+                font-size: 14px;
+                &:hover {
+                    outline: none;
+                }
+            } 
+            
         }
         &__btns {
             margin-top: 13px;
+            display: flex;
         }
         &__img {
             width: 100%;
@@ -166,5 +178,6 @@
         line-height: 100%;
         margin-top: 10px;
     }
-
+    
 }
+

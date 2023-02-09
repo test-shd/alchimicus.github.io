@@ -1,4 +1,6 @@
 //menu
+$('.logo_loader').delay(4000).fadeOut('slow');
+// $('.loaderArea').delay(5000).fadeOut('slow');
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu__link'),
@@ -50,6 +52,15 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.overlay, .modal').fadeIn();
    });
    $('.modal__close, .overlay').on('click', function(){
-     $('.overlay, .modal, .thanks').fadeOut();
+     $('.overlay, .modal, .thanks, .order').fadeOut();
    });
+
+   //order
+   $('.button_mini').each(function(i) {
+    $(this).on('click', function() {
+        $('.order .modal__title_order').text($('.order__text').eq(i).text());
+       
+        $('.overlay, .order').fadeIn('slow');
+    });
+});
 });

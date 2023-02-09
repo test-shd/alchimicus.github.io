@@ -8,7 +8,7 @@
     z-index: 5;
     display: none;
 }
-.modal {
+.modal, .order {
     z-index: 6;
     position: fixed;
     top: 50%;
@@ -21,6 +21,9 @@
     &__title {
         text-align: center;
         font-size: 18px;
+        &_order {
+            text-align: center;
+        }
     }
     &__close {
         position: absolute;
@@ -38,13 +41,16 @@
             margin-bottom: 15px;
             height: 30px;
             border: 1px solid #000;
-            border-radius: 5px;
+            font-size: 14px;
             padding-left: 5px;
+            
         }
+        
         textarea {
             margin-bottom: 30px;
             border: 1px solid #000;
-            border-radius: 5px;
+            font-size: 14px;
+            line-height: 120%;
             padding-left: 5px;
             padding-top: 5px;
         }
