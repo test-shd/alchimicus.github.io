@@ -110,20 +110,9 @@
         color: #FFFFFF;
         animation: scale 3s linear infinite;
         position: absolute;
-        top: 55%;
-        left: 50%;
+        top: 60%;
+        left: 52%;
         transform: translate(-50%, -50%);
     }
 
-}
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
 }

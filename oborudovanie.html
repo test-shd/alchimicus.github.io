@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алхимик</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-reboot.min.css" integrity="sha512-IS8Z2ZgFvTz/yLxE6H07ip/Ad+yAGswoD1VliOeC2T4WaPFNPC1TwmQ5zomGS+syaR2oO3aXJGKaHv21Dspx0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+<script defer src="js/jquery-3.6.3.min.js"></script>
+<script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="catalog">
+        <header>
+            <div class="container">
+             <div class="header__wrapper">
+                 <div class="logo"><a href="index.html"><img src="img/logo_blue.svg" alt="logo"></a></div>
+                 <ul class="menu scrollto">
+                     <li class="menu__item"><a href="index.html" class="menu__link ">Главная </a></li>
+                     <li class="menu__item"><a href="index.html#about" class="menu__link">О компании</a></li>
+                     <li class="menu__item"><a href="index.html#prod" class="menu__link underline">Продукция</a></li>
+                     <li class="menu__item"><a href="#cont" class="menu__link">Контакты</a></li>
+                 </ul>
+                 <a href="#" class="btn header__btn consult">Заказать звонок</a>
+                 <div class="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+            </div>
+         </header>
+         <div class="container">
+            <div class="catalog__navigation">
+                <a href="catalog.html#oborud" class="catalog__navlink"> Оборудование /</a>
+                
+                <a href="#" class="catalog__navlink catalog__navlink_bold">Для кормления и содержания животных</a>
+             </div>
+             <h2 class="catalog__subtitle">Оборудование для кормления телят</h2>
+             <div class="catalog__items">
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="img/products-img/paula-40.jpg" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Кормомама Paula</p>
+                    <p class="catalog__text">Автоматическая станция на 40 телят</p>
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать звонок</div>
+                        <a href="prodinfo/Paula-40telyat.pdf" target="_blank" class="btn catalog__item__btn">Скачать каталог</a>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="img/products-img/alma-100.jpg" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Кормомама Alma</p>
+                    <p class="catalog__text">Автоматическая станция на 100 телят</p>
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать звонок</div>
+                        <a href="prodinfo/Alma-100telyat.pdf" target="_blank" class="btn catalog__item__btn">Скачать каталог</a>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="img/products-img/catalog-3.jpg" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Молочный шатл</p>
+                    <p class="catalog__text">Мобильная станция для кормления телят</p>
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать звонок</div>
+                        <a href="prodinfo/Shuttle-1.pdf" target="_blank" class="btn catalog__item__btn">Скачать каталог</a>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </div>
+    <!-- modal -->
+<div class="overlay" ></div>
+<div class="modal">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Оставьте Ваши контакты, <br> и мы свяжемся с Вами в ближайшее время</p>
+    <form class="modal__form" action="#">
+        <input type="text" placeholder="Ваше имя" name="name" required>
+        <input type="number" placeholder="Ваш телефон" name="phone" required>
+        <textarea placeholder="Введите сообщение" name="textmessage"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <span class="policy">
+            <input type="checkbox" checked required>
+            Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
+        </span>
+    </form>
+</div>
+<div class="order">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Ваш заказ:</p>
+    <p class="modal__title_order"></p>
+    <p class="modal__title">Оставьте данные, и мы свяжемся с Вами для уточнения заказа</p>
+    <form class="modal__form" action="#">
+        <!-- <input type="text" name="order" class="order_hide"> -->
+        <input type="text" placeholder="Ваше имя" name="name" required>
+        <input type="number" placeholder="Ваш телефон" name="phone" required>
+        <textarea placeholder="Введите комментарий к заказу" name="textmessage"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <span class="policy">
+            <input type="checkbox" checked required>
+            Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
+        </span>
+    </form>
+</div>
+
+
+<div class="thanks">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Спасибо за заявку!</p>
+</div>
+</body>
+</html>

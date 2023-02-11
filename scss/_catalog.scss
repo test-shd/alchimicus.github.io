@@ -71,6 +71,8 @@
         display: flex;
         justify-content: space-between;
         width: 80%;
+        position: relative;
+        z-index: 2;
     }
     &__link {
         font-style: normal;
@@ -166,8 +168,9 @@
             
         }
         &__btns {
-            margin-top: 13px;
+            margin-bottom: auto;
             display: flex;
+
         }
         &__img {
             width: 100%;

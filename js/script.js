@@ -13,8 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
+            hamburger.classList.remove('hamburger_active');
+            menu.classList.remove('menu_active');
         });
     });
 
