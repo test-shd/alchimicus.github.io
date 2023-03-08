@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
+    <title>Ведра</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-reboot.min.css" integrity="sha512-IS8Z2ZgFvTz/yLxE6H07ip/Ad+yAGswoD1VliOeC2T4WaPFNPC1TwmQ5zomGS+syaR2oO3aXJGKaHv21Dspx0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -45,7 +45,7 @@
                  <ul class="menu scrollto">
                      <li class="menu__item"><a href="index.html" class="menu__link ">Главная </a></li>
                      <li class="menu__item"><a href="index.html#about" class="menu__link">О компании</a></li>
-                     <li class="menu__item"><a href="#prod" class="menu__link underline">Продукция</a></li>
+                     <li class="menu__item"><a href="index.html#prod" class="menu__link underline">Продукция</a></li>
                      <li class="menu__item"><a href="#cont" class="menu__link">Контакты</a></li>
                  </ul>
                  <a href="#" class="btn header__btn consult">Заказать звонок</a>
@@ -58,79 +58,65 @@
             </div>
          </header>
          <div class="container">
-            <h1 class="title">Каталог</h1>
-            <h2 class="catalog__title catalog__title_center" id="desinfection">Моющие и дезинфицирующие средства</h2>
-            <div class="catalog__block">
-                <p class="catalog__title ">Пищевая промышленность</p>
-                <div class="catalog__wrapper">
-                    <a href="shelochnye.html" class="catalog__link">Щелочные средства <span class="arrow">&#8250;</span></a>
-                    <a href="shelochnye.html#kislotn" class="catalog__link">Кислотные моющие средства <span class="arrow">&#8250;</span></a>
-                    <a href="shelochnye.html#spec" class="catalog__link">Специальные средства <span class="arrow">&#8250;</span></a>
-                </div>
-                <img src="img/catalog_img2.png" alt="cow" class="catalog__img">
-            </div>
-            <div class="catalog__block">
-                <p class="catalog__title ">Агро-промышленный комплекс</p>
-                <div class="catalog__wrapper">
-                    <a href="gigienavymeni.html" class="catalog__link">Гигиена вымени <span class="arrow">&#8250;</span></a>
-                    <a href="gigienaoborud.html" class="catalog__link">Гигиена доильного оборудования <span class="arrow">&#8250;</span></a>
-                    <a href="gigienakopyt.html" class="catalog__link">Гигиена копыт <span class="arrow">&#8250;</span></a>
-                </div>
-                <img src="img/catalog_img1.png" alt="cow" class="catalog__img">
-            </div>
-            
-            <div class="catalog__block">
-                <a href="#" class="catalog__title ">Клининг и уборка</a>
+            <div class="catalog__navigation">
+                <a href="catalog.html#oborud" class="catalog__navlink"> Расходные материалы /</a>
                 
-                <img src="img/catalog_img3.png" alt="cow" class="catalog__img">
-            </div>
-            <h2 class="catalog__title catalog__title_center" id="material">Расходные материалы </h2>
-            <div class="catalog__block">
-               
-               <div class="catalog__wrapper">
-                   <a href="rashodn.html#odnoras" class="catalog__link">Средства индивидуальной защиты одноразовые <span class="arrow">&#8250;</span></a>
-                   <a href="rashodn.html#inventar" class="catalog__link">Цветокодированный уборочный инвентарь для пищевых предпиятий <span class="arrow">&#8250;</span></a>
+                <a href="rashodn.html" class="catalog__navlink ">Цветокодированный уборочный инвентарь для пищевых предприятий  /</a>
+                <a href="#" class="catalog__navlink catalog__navlink_bold">Ведра</a>
+             </div>
+             <h2 class="catalog__subtitle" >Ведра</h2>
+             <div class="catalog__items">
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="https://static.tildacdn.com/tild6365-3263-4565-a564-303039613332/74103.JPG" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Ведро Schavon 6 л, артикул 7410</p>
+                    
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать</div>
+                        
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="https://static.tildacdn.com/tild3063-3237-4339-a666-316133373039/74203.JPG" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Ведро Schavon 12 л, артикул 7420</p>
                    
-               </div>
-               <img src="img/catalog_img5.png" alt="cow" class="catalog__img">
-           </div>
-            <h2 class="catalog__title catalog__title_center" id="oborud">Оборудование</h2>
-            <div class="catalog__block">
-               
-               <div class="catalog__wrapper">
-                   <a href="oborudovanie.html" class="catalog__link">Для кормления и содержания животных <span class="arrow">&#8250;</span></a>
-                   <a href="#" class="catalog__link">Маркировка животных <span class="arrow">&#8250;</span></a>
-                   <a href="#" class="catalog__link">Запчасти для доильного оборудования <span class="arrow">&#8250;</span></a>
-               </div>
-               <img src="img/catalog_img4.png" alt="cow" class="catalog__img">
-           </div>
-
-           
-
-           <h2 class="catalog__title catalog__title_center" id="desinsection">Дезинсекция и дератизация</h2>
-           <div class="catalog__block">
-              
-              <div class="catalog__wrapper">
-                  <a href="deratisation.html" class="catalog__link">Дератизация- средства от грызунов  <span class="arrow">&#8250;</span></a>
-                  <a href="desinsection.html" class="catalog__link">Инсектициды <span class="arrow">&#8250;</span></a>
-                  
-              </div>
-              <img src="img/catalog_img6.png" alt="cow" class="catalog__img">
-          </div>
-
-
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать</div>
+                        
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="https://static.tildacdn.com/tild6537-3236-4835-a531-306232313962/74113.JPG" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Крышка Schavon для ведра 6 л, артикул 7411</p>
+                   
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать</div>
+                        
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item__img" src="https://static.tildacdn.com/tild3635-3230-4662-b236-336662616238/74213.JPG" alt="product">
+                    <p class="catalog__subtitle_18 order__text">Крышка Schavon для ведра 12 л, артикул 7421</p>
+                   
+                    
+                    <div class="catalog__item__btns">
+                        <div class="btn catalog__item__btn button_mini">Заказать</div>
+                        
+                    </div>
+                </div>
+                
+                
+             </div>
          </div>
-
-         
-         </div>
-        
     </div>
     <footer id="cont">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__content">
                     <div class="logo">
-                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                        <a href="#"><img src="img/logo.svg" alt="logo"></a>
                     </div>
                     <p class="footer__text">Дистрибьютор линейки профессиональных продуктов и комплексных решений в области чистоты и защиты для различных индустрий.</p>
                     <div class="footer__contacts">
@@ -171,25 +157,45 @@
             </ul>
         </div>
     </footer>
+    
     <!-- modal -->
-    <div class="overlay" ></div>
-    <div class="modal">
-        <div class="modal__close">&times;</div>
-        <p class="modal__title">Оставьте Ваши контакты, <br> и мы свяжемся с Вами в ближайшее время</p>
-        <form class="modal__form" action="#">
-            <input type="text" placeholder="Ваше имя" name="name" required>
-            <input type="number" placeholder="Ваш телефон" name="phone" required>
-            <textarea placeholder="Введите сообщение" name="textmessage"></textarea>
-            <button class="btn" type="submit">Отправить</button>
-            <span class="policy">
-                <input type="checkbox" checked required>
-                Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
-            </span>
-        </form>
-    </div>
-    <div class="thanks">
-        <div class="modal__close">&times;</div>
-        <p class="modal__title">Спасибо за заявку!</p>
-    </div>
+<div class="overlay" ></div>
+<div class="modal">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Оставьте Ваши контакты, <br> и мы свяжемся с Вами в ближайшее время</p>
+    <form class="modal__form" action="#">
+        <input type="text" placeholder="Ваше имя" name="name" required>
+        <input type="number" placeholder="Ваш телефон" name="phone" required>
+        <textarea placeholder="Введите сообщение" name="textmessage"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <span class="policy">
+            <input type="checkbox" checked required>
+            Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
+        </span>
+    </form>
+</div>
+<div class="order">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Ваш заказ:</p>
+    <p class="modal__title_order"></p>
+    <p class="modal__title">Оставьте данные, и мы свяжемся с Вами для уточнения заказа</p>
+    <form class="modal__form" action="#">
+        <!-- <input type="text" name="order" class="order_hide"> -->
+        <input type="text" placeholder="Ваше имя" name="name" required>
+        <input type="number" placeholder="Ваш телефон" name="phone" required>
+        <textarea placeholder="Введите комментарий к заказу" name="textmessage"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <span class="policy">
+            <input type="checkbox" checked required>
+            Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a>
+        </span>
+    </form>
+</div>
+
+
+<div class="thanks">
+    <div class="modal__close">&times;</div>
+    <p class="modal__title">Спасибо за заявку!</p>
+</div>
 </body>
 </html>
