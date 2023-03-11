@@ -76,6 +76,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .mobile__phone {
+            display: none;
+        }
     }
     &__btn {
         outline: 1px solid #fff;
@@ -88,4 +91,5 @@
         }
         
     }
+    
 }

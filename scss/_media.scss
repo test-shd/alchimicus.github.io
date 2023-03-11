@@ -1,3 +1,15 @@
+@media screen and(max-height:513px) {
+    .promo {
+        height: 513px;
+        &__wrap {
+            height: 100%;
+            #myVideo {
+                height: 100%;
+            }
+        }
+    }
+}
+
 @media screen and(max-width:1023px) {
     .wins {
         padding-bottom: 60px;
@@ -67,7 +79,22 @@
     }
     .header {
         &__btn {
-            display: none;
+            font-size: 1px;
+            color: transparent;
+            width: 37px;
+            height: 37px;
+            margin-right: 80px;
+            background: #fff;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+        }
+        &__wrapper {
+            .mobile__phone {
+                display: block;
+                width: 24px;
+            }
         }
     }
     .prod {
@@ -257,6 +284,10 @@
         &__items {
             margin-top: 30px;
         }
+    }
+    .modal, .order {
+        width: 100%;
+        padding: 30px 10px;
     }
     .modal__title, .order__title {
         font-size: 14px;

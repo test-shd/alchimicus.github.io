@@ -18,6 +18,7 @@
     padding: 40px 40px;
     box-shadow: $main-color 5px 5px 15px;
     display: none;
+    width: 700px;
     &__title {
         text-align: center;
         font-size: 18px;
@@ -39,7 +40,7 @@
         width: 80%;
         input {
             margin-bottom: 15px;
-            height: 30px;
+            height: 45px;
             border: 1px solid #000;
             font-size: 14px;
             padding-left: 5px;
@@ -53,6 +54,7 @@
             line-height: 120%;
             padding-left: 5px;
             padding-top: 5px;
+            height: 90px;
         }
         .btn {
             border: 1px solid $main-color;
