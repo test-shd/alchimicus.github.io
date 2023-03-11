@@ -63,4 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.overlay, .order').fadeIn('slow');
     });
 });
+document.querySelector(".select-color").addEventListener("change", function () {
+    this.style.backgroundColor = this.value;
+  });
 });
