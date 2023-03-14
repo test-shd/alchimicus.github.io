@@ -108,6 +108,7 @@
             line-height: 19px;
         }
     }
+    
 }
 @media screen and(max-width:767px) {
     .hamburger_active {
@@ -292,7 +293,11 @@
     .modal__title, .order__title {
         font-size: 14px;
     }
-    
+    .card {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+    }
 }
 @media screen and(max-width:424px) {
     .footer {
