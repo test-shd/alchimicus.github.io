@@ -24,6 +24,9 @@
         font-size: 18px;
         &_order {
             text-align: center;
+            &_kg {
+                text-align: center;
+            }
         }
     }
     &__close {
@@ -32,6 +35,22 @@
         top: 15px;
         font-size: 30px;
         cursor: pointer;
+    }
+    &__back {
+        position: relative;
+        bottom: 20px;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: center;
+       
+        margin: 0 auto;
+        &:nth-child(1) {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            font-size: 30px;
+            text-decoration: none;
+        }
     }
     &__form {
         display: flex;

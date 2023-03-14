@@ -52,8 +52,11 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.overlay, .modal').fadeIn();
    });
    $('.modal__close, .overlay').on('click', function(){
-     $('.overlay, .modal, .thanks, .order, .card').fadeOut();
+     $('.overlay, .modal, .thanks, .order').fadeOut();
    });
+   $('.modal__back').on('click', function(){
+    $('.card').fadeOut();
+  });
 
    //order
    $('.button_mini').each(function(i) {
@@ -62,8 +65,17 @@ window.addEventListener('DOMContentLoaded', () => {
        
         $('.overlay, .order').fadeIn('slow');
     });
+    
 });
-
+//order card
+$('.button_mini_card').each(function(i) {
+    $(this).on('click', function() {
+        $('.order .modal__title_order').text($('.card__title').eq(i).text());
+        $('.order .modal__title_order_kg').text($('#volume option:selected').eq(i).text());
+        $('.overlay, .order').fadeIn('slow');
+    });
+    
+});
 
   //modal cards
   $('.btnformodal').each(function(i) {
