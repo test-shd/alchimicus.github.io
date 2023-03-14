@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.overlay, .modal').fadeIn();
    });
    $('.modal__close, .overlay').on('click', function(){
-     $('.overlay, .modal, .thanks, .order').fadeOut();
+     $('.overlay, .modal, .thanks, .order, .card').fadeOut();
    });
 
    //order
@@ -63,7 +63,18 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.overlay, .order').fadeIn('slow');
     });
 });
-document.querySelector(".select-color").addEventListener("change", function () {
+
+
+  //modal cards
+  $('.btnformodal').each(function(i) {
+    $(this).on('click', function() {
+       
+        $('.card').eq(i).fadeIn('slow');
+    });
+  });
+
+  //выбор цвета
+  document.querySelector(".select-color").addEventListener("change", function () {
     this.style.backgroundColor = this.value;
   });
 });
